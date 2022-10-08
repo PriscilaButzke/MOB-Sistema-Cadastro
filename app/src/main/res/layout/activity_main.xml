@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:background="@drawable/computador" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="43dp"
+            android:paddingTop="16dp"
+            android:text="Sistema de Cadastro"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtBemVindo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear"
+        android:text="Bem- vindo ao Sistema de Cadastro.
+Esse é um pequeno software de cadastro de usúarios.
+Escolha uma das opções abaixo:"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btcadastrar_usuario"
+        android:layout_below="@id/txtBemVindo"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="Cadastrar Usuário"
+        android:backgroundTint="@color/orangeB"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:id="@+id/bt_listar_usuarios_cadastrados"
+        android:layout_below="@id/btcadastrar_usuario"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/orangeB"
+        android:textColor="@color/black"
+        android:text="Listar Usúarios Cadastrados"/>
+
+</RelativeLayout>

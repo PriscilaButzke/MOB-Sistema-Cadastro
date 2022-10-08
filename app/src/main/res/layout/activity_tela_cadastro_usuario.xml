@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaCadastroUsuario">
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:background="@drawable/computador" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="43dp"
+            android:paddingTop="16dp"
+            android:text="Cadastro de Usuário"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/txtpreencha"
+        android:layout_below="@id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Preencha os dados abaixo:"
+        android:textColor="@color/black"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/txtnome"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txtpreencha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:textColor="@color/black"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/ednome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtnome" />
+    <TextView
+        android:id="@+id/txtendereco"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ednome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Endereço:"
+        android:textColor="@color/black"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/edendereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtendereco" />
+
+    <TextView
+        android:id="@+id/txttelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edendereco"
+        android:layout_marginTop="10dp"
+        android:text="Telefone:"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/edtelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txttelefone" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/edtelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btcadastrar"
+        android:layout_below="@id/txtBemVindo"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:text="Cadastrar"
+        android:backgroundTint="@color/orangeB"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btcancelar_cadastro"
+        android:layout_below="@id/btcadastrar_usuario"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/orangeB"
+        android:textColor="@color/black"
+        android:text="Cancelar"/>
+</LinearLayout>
+
+
+
+</RelativeLayout>
